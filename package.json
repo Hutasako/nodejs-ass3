@@ -1,0 +1,11 @@
+{
+  "name": "nodejs-ass3",
+  "version": "1.0.0",
+  "description": "Application for Assignment 3",
+  "main": "assignment3.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Efren Joseph Jungao",
+  "license": "ISC"
+}
