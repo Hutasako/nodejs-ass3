@@ -2,8 +2,8 @@ const fs = require('fs')
 const axios = require('axios');
 
 console.log('Running: Weather App.')
-console.log('Provided by OpenWeather API.')
-
+console.log('Data provided by OpenWeather API.')
+console.log(``)
 // Setting payload
 let options = {
   method: 'GET',
@@ -40,8 +40,11 @@ if (passedVal) {
 
     console.log(`Current date: ${today}`)
     console.log(`OpenWeather data for: ${passedVal}`)
+    console.log(`Current weather: ${result.weather[0].main}`)
+    console.log(`Current weather description: ${result.weather[0].description}`)
     console.log(`Current temperature: ${result.main.temp} C`);
     // console.log(`Saving extra information to file: ${fileName}`)
+    console.log(``)
 
     let JSONresult = JSON.stringify(result);
     fs.writeFile(fileName, JSONresult, function(err){
